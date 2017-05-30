@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Página Inicial</title>
+	<!-- favicon  -->
+	<link rel="icon" type="image/png" href="bootstrap/img/ous.png">
+	<meta name="viewport" content="width=device-width">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/estilo.css">
+</head>
+<body>
+	<div class="container">
+		<header class="row clearfix caixa">
+			<img src="bootstrap/img/logo.png" alt="logo">
+		</header>
+		<nav class="row clearfix">
+			<ul class="nav nav-pills menu-estilo">
+				<li><a href="">início</a></li>
+				<li><a href="">listas</a></li>
+				<li><a href="">produtos</a></li>
+			</ul>
+		</nav>
+		<div class="row clearfix caixa">
+			<section class="col-md-6">
+				<hr><h2 class="titulo"><strong>Efetue Login</strong></h2>
+				<form method="post" class="form-estilo">
+					<p>
+						<label for="email">Email:</label>
+						<input type="email" name="email" class="form-control" placeholder="digite seu e-mail" required="">
+					</p>
+					<p>
+						<label for="senha">Senha:</label>
+						<input type="password" name="senha" class="form-control" placeholder="digite sua senha" required=""></p>
+						<label class="checkbox">
+							<input type="radio" name="lembrete">Lembrar Senha
+						</label>						
+					<p><button name="login" type="submit" class="btn btn-lg btn-info btn-block">Entrar</button></p>
+				</form>
+			</section>
+			<section class="col-md-6">
+				<hr><h2 class="titulo"><strong>Cadastre-se Agora:</strong></h2>
+				
+				<form method="post" class="form-estilo">
+					<p>
+						<label for="email">Email:</label>
+						<input type="email" name="email" class="form-control" placeholder="digite seu e-mail" required="">
+					</p>
+					<p>
+						<label for="nome">Nome:</label>
+						<input type="text" name="nome" class="form-control" placeholder="digite seu nome" required="">
+					</p>
+					<p>
+						<label for="senha">Senha:</label>
+						<input type="password" name="senha" class="form-control" placeholder="digite sua senha" required="">
+					</p>
+					<p><button class="btn btn-lg btn-info btn-block">Cadastrar</button></p>
+				</form>
+			</section>
+		</div>
+		<section class="row clearfix caixa">
+			<hr>
+			<h2 class="titulo"><strong>Como criar sua própria lista?</strong></h2>
+			<hr>
+			<div>
+				<div class="col-md-6">
+					<img src="bootstrap/img/banner_half_sec_15_1492015602.gif" class="img-responsive">
+				</div>
+				<div class="col-md-6">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</section>
+	</div>
+	
+</body>
+</html>

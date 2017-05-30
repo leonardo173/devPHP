@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- favicon  -->
+	<link rel="icon" type="image/png" href="bootstrap/img/ous.png">
+	<meta name="viewport" content="width=device-width">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/estilo.css">
+</head>
+<body>
+
+<div class="container">
+	<header class="row clearfix caixa">
+			<img src="bootstrap/img/logo.png" alt="logo">
+	</header>
+		<nav class="row clearfix ">
+			<ul class="nav nav-pills menu-estilo">
+				<li><a href="">início</a></li>
+				<li><a href="">listas</a></li>
+				<li><a href="">produtos</a></li>
+			</ul>
+		</nav>
+	<div class="row clearfix caixa">
+			<hr>
+			<h2 class="titulo"><strong>Meu Perfil</strong></h2>
+			<hr>
+	
+	<section class="col-md-6">
+		<h4 class="titulo">Imagem de Perfil</h4>
+		<img src="bootstrap/img/police-women_icon-icons.com_55038.png" class="img-responsive center-block">
+		<hr>
+		<form method="post" enctype="multipart/form-data" class="form-estilo">
+			<p><input type="file" name="arquivo"></p>
+			<p><button name="enviarFoto" type="submit" class="btn btn-lg btn-info btn-block">Enviar</button></p>
+		</form>
+	</section>
+
+	<section class="col-md-6">
+		<h4 class="titulo">Dados de Perfil</h4>
+		<p>Nome: User</p>
+		<p>E-mail: user@gmail.com</p>
+		<p><a href="">Meu Link</a></p>
+		<p>Data de criação: 12/12/2012</p>
+		<br>
+		<div class="bg-warning">
+			<h3>Minha Lista</h3>
+			<p>Nome: Lista de aniversário</p>
+			<form method="post">
+				<input type="text" name="descricao" placeholder="digite o nome de sua lista" required="">
+				<button name="criarLista" type="submit" class="btn btn-danger">Criar lista</button>
+			</form>
+		</div>
+	</section>
+</div>
+	<!-- <div>
+			<hr>
+			<h2><strong>Serviços para sua lista</strong></h2>
+			<hr>
+	</div> -->
+	<div class="row clearfix">
+		<section class="col-md-6" style="background-color: #fff;">
+			<h3 class="titulo">Itens da minha lista</h3>
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Código</th>
+						<th>Descrição</th>
+						<th>Excluir</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>6</td>
+						<td>Computador</td>
+						<td>
+							<form method="post">
+								<input type="hidden" name="codProduto" value="6">
+								<button name="excluirItem" type="submit" class="btn btn-danger">
+									<span class="glyphicon glyphicon-remove"></span>Excluir
+								</button>
+								
+							</form>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section class="col-md-6 caixa">
+			<h3 class="titulo">Indicar para um amigo</h3>
+			<form method="post" class="form-estilo">
+				<input type="hidden" name="link" value=""/>
+				<p><input type="text" name="nome" placeholder="Nome" required="" class="form-control"></p>
+				<p><input type="email" name="email" placeholder="Email" required="" class="form-control"></p>
+				<p><button type="submit" class="btn btn-lg btn-info btn-block">Indicar</button></p>
+			</form>
+		</section>
+	</div>
+</body>
+</html>
